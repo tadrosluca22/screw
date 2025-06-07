@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Player Score Tracker</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Screw - سكرو</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <h2>Player Score Tracker</h2>
+  <h1>Screw - سكرو</h1>
 
-  <label for="playerCount">Number of players:</label>
-  <input type="number" id="playerCount" min="1">
-  <button onclick="createNameInputs()">Next</button>
+  <div class="card">
+    <label for="playerCount">Number of players:</label>
+    <input type="number" id="playerCount" min="1" />
+    <button onclick="createNameInputs()">Next</button>
+  </div>
 
-  <div id="nameInputs" class="hidden">
-    <h3>Enter Player Names:</h3>
+  <div id="nameInputs" class="card hidden">
+    <h2>Enter Player Names</h2>
     <div id="namesContainer"></div>
     <button onclick="generateTable()">Generate Table</button>
   </div>
 
-  <div id="scoreTable"></div>
+  <div id="scoreTable" class="card"></div>
 
-  <br>
-  <button onclick="showScoreboard()">Show Scoreboard</button>
-  <div id="scoreboard"></div>
+  <div class="card">
+    <button onclick="showScoreboard()">Show Scoreboard</button>
+    <div id="scoreboard"></div>
+  </div>
 
   <script src="script.js"></script>
 </body>
