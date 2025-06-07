@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Player Score Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Player Score Tracker</h2>
+
+  <label for="playerCount">Number of players:</label>
+  <input type="number" id="playerCount" min="1">
+  <button onclick="createNameInputs()">Next</button>
+
+  <div id="nameInputs" class="hidden">
+    <h3>Enter Player Names:</h3>
+    <div id="namesContainer"></div>
+    <button onclick="generateTable()">Generate Table</button>
+  </div>
+
+  <div id="scoreTable"></div>
+
+  <br>
+  <button onclick="showScoreboard()">Show Scoreboard</button>
+  <div id="scoreboard"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
